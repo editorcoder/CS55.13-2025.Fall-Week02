@@ -1,0 +1,89 @@
+<!-- 
+editorcoder
+2025-08-30
+SRJC CS55.13 Fall 2025
+Week 2: Assignment 3: Node.js + React Basics 
+react_basics.html
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SRJC CS55.13 Fall 2025: Node.js + React Basics</title>
+
+    <!-- load custom CSS -->
+    <link href="cat_game.css" rel="stylesheet" type="text/css" />
+
+    <!-- load jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <!-- load Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+
+    <h1>EditorCoder's Cat Trading Card Game</h1>
+    
+    <main>
+
+      <h2>Sample Playing Card Deck</h2>
+      
+      <!-- root React element -->
+      <div id="catApp"></div>
+    
+    </main>
+
+    <!-- custom script with React component -->
+    <script type="text/babel" data-type="module" data-presets="react">
+
+      // run entire script in strict mode
+      "use strict";
+
+      // load React module
+      import React from "https://cdn.jsdelivr.net/npm/react@19.1.1/+esm";
+      // import createRoot method from ReactDOM client-side module
+      import { createRoot } from "https://cdn.jsdelivr.net/npm/react-dom@19.1.1/client/+esm";
+
+      // define React component 'CatDeck'
+      function CatDeck(props) {
+        // return a deck of cat TCG cards
+        return (
+          <section class="card-deck">
+            {
+              // loop thru card deck array
+              props.list.map(
+                // build card from array item data
+                // card color and h4 based on card_type
+                // h3 based on card_title
+                // paras based on card_image_URL, card_description, and card_lore
+                (item, index) => (
+                  <article key={index} class={`card ${item.card_type}`} >
+                    <h3>{item.card_title}</h3>
+                    <h4>Type: {item.card_type}</h4>
+                    <p><a href={item.card_image_URL} target="_blank">Photo</a> to be added as card image soon.</p>
+                    <p><strong>{item.card_description}</strong></p>
+                    <p class="lore">{item.card_lore}</p>
+                  </article>
+                )
+              )
+            }
+          </section>
+        );
+      }
+
+      $.getJSON("cat_game_data", function (jsonFromJquery) {   // load JSON data
+        console.log(jsonFromJquery); // log JSON data to the console
+        // render 'CatDeck' component, using 'cat_game.json' data, into 'catApp' root HTML element
+        const ecElement = document.getElementById("catApp"); 
+        const ecRoot = createRoot(ecElement);
+        ecRoot.render(<CatDeck list={jsonFromJquery} />);
+      });
+
+    </script>
+
+  </body>
+</html>

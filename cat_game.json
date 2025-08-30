@@ -1,0 +1,34 @@
+[
+    {
+        "card_title": "The Darkness",
+        "card_type": "Ability",
+        "card_image_URL": "https://unsplash.com/photos/closeup-photo-of-black-cat-3LPGWASiSbM",
+        "card_image_credit": "Photo by <a href=\"https://unsplash.com/@epmallmann?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Eduardo Mallmann</a> on <a href=\"https://unsplash.com/photos/closeup-photo-of-black-cat-3LPGWASiSbM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Unsplash</a>",
+        "card_description": "Take no damage for 2 turns.",
+        "card_lore": "Black cats--also known as voids--have the ability to vanish into shadows and dark backgrounds."
+    },
+    {
+        "card_title": "Flame Point Siamese",
+        "card_type": "Unit",
+        "card_image_URL": "https://unsplash.com/photos/a-close-up-of-a-cat-with-blue-eyes-ZT-wF5OrWBA",
+        "card_image_credit": "Photo by <a href=\"https://unsplash.com/@ddmcl_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/\">Donna McL</a> on <a href=\"https://unsplash.com/photos/a-close-up-of-a-cat-with-blue-eyes-ZT-wF5OrWBA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Unsplash</a>",
+        "card_description": "Banshee Scream: this unit bypasses any shields for all opponents.",
+        "card_lore": "Siamese cats are known to vocalize at painfully loud volumes."
+    },
+    {
+        "card_title": "Razor-Sharp Claws",
+        "card_type": "Weapon",
+        "card_image_URL": "https://unsplash.com/photos/brown-tabby-cat-fMJ0sMoTgcg",
+        "card_image_credit": "Photo by <a href=\"https://unsplash.com/@chrisking72?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Chris King</a> on <a href=\"https://unsplash.com/photos/brown-tabby-cat-fMJ0sMoTgcg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Unsplash</a>",
+        "card_description": "Laceration: +3 damage bonus.",
+        "card_lore": "Someone forgot to use the nail trimmer..."
+    },
+    {
+        "card_title": "That's a Nasty Bite",
+        "card_type": "Ability",
+        "card_image_URL": "https://unsplash.com/photos/a-cat-yawning-with-its-mouth-wide-open--8Mlvl36mOs",
+        "card_image_credit": "Photo by <a href=\"https://unsplash.com/@lampovyj?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Leonid Privalov</a> on <a href=\"https://unsplash.com/photos/a-cat-yawning-with-its-mouth-wide-open--8Mlvl36mOs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Unsplash</a>",
+        "card_description": "Infectious bite: +1 damage each turn, for 3 turns, for selected opponent.",
+        "card_lore": "The inside of a cat's mouth is full of all sorts of bacteria..."
+    }
+]
